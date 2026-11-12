@@ -41,6 +41,8 @@ O trabalho contempla o tratamento e a validação dos dados com SQL, a análise 
 
 O dashboard apresenta uma visão geral do desempenho comercial, com indicadores e gráficos interativos.
 
+![Dashboard Superstore](images/dashboard_superstore.png)
+
 **Indicadores principais:**
 - Total de vendas
 - Total de lucro
@@ -81,6 +83,9 @@ Retail-Sales-Profitability-Analysis/
 ├── docs/
 │   └── insights.md
 │
+├── images/
+│   └── dashboard_superstore.png
+│
 ├── powerbi/
 │   └── Retail-Sales-Profitability-Analysis.pbix
 │
@@ -90,6 +95,7 @@ Retail-Sales-Profitability-Analysis/
 ## Documentação complementar
 
 - [Insights da análise](docs/insights.md)
+- [Imagem do dashboard](images/dashboard_superstore.png)
 - [Arquivo do dashboard Power BI](powerbi/Retail-Sales-Profitability-Analysis.pbix)
 
 ## Observação
