@@ -2,49 +2,73 @@
 
 ## Sobre o projeto
 
-Este projeto tem como objetivo analisar o desempenho comercial de uma base de dados de varejo, utilizando SQL Server para realizar o tratamento, a validação e a análise dos dados.
+Projeto de análise de dados desenvolvido com **SQL Server e Power BI**, utilizando a base Superstore para investigar o desempenho comercial e a rentabilidade de uma operação de varejo.
 
-A análise busca identificar padrões de vendas e lucratividade, avaliando o desempenho por categorias, subcategorias, descontos, períodos, regiões e segmentos de clientes.
+O trabalho contempla o tratamento e a validação dos dados com SQL, a análise de indicadores de negócio e a construção de um dashboard interativo para facilitar a exploração dos resultados.
 
 ## Objetivos da análise
 
-- Avaliar o desempenho geral de vendas e lucro.
-- Identificar categorias e subcategorias com maior e menor rentabilidade.
-- Analisar a relação entre descontos e lucratividade.
-- Investigar a evolução mensal das vendas e dos lucros.
-- Comparar o desempenho entre regiões e segmentos de clientes.
+- Avaliar o desempenho geral de vendas, lucro e margem.
+- Comparar a rentabilidade entre categorias e subcategorias.
+- Investigar a relação entre descontos e lucratividade.
+- Analisar a evolução mensal das vendas e dos lucros.
+- Comparar resultados entre regiões e segmentos de clientes.
 
 ## Base de dados
 
 - **Fonte:** [Superstore Dataset — Kaggle](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 - **Registros após tratamento:** 9.993
-- **Período analisado:** 2014 a 2017.
+- **Pedidos distintos:** 5.009
+- **Período analisado:** 2014 a 2017
+- **Moeda dos valores:** dólar americano (USD)
 
 ## Ferramentas utilizadas
 
-- SQL Server
-- SQL
+- **SQL Server:** armazenamento, tratamento, validação e consultas analíticas.
+- **SQL:** limpeza, padronização e análise dos dados.
+- **Power BI Desktop:** construção do dashboard e exploração visual dos indicadores.
 
 ## Etapas do projeto
 
 1. **Importação dos dados:** carregamento da base original no SQL Server.
-2. **Tratamento dos dados:** conversão de tipos, padronização e remoção de registro duplicado.
-3. **Validação:** verificação da integridade e qualidade dos dados tratados.
-4. **Análise exploratória:** consultas SQL para investigar indicadores e padrões de negócio.
-5. **Documentação:** registro dos principais resultados e descobertas da análise.
+2. **Tratamento dos dados:** conversão de tipos, padronização de campos e remoção de registro duplicado.
+3. **Validação:** verificações de qualidade e integridade da tabela tratada.
+4. **Análise de negócio:** consultas SQL para investigar vendas, lucro, margens, descontos, períodos, regiões e segmentos.
+5. **Visualização:** desenvolvimento de dashboard interativo no Power BI.
+6. **Documentação:** registro dos principais resultados e insights identificados.
+
+## Dashboard Power BI
+
+O dashboard apresenta uma visão geral do desempenho comercial, com indicadores e gráficos interativos.
+
+**Indicadores principais:**
+- Total de vendas
+- Total de lucro
+- Margem de lucro
+- Total de pedidos
+
+**Análises visuais:**
+- Evolução mensal das vendas
+- Vendas por categoria
+- Lucro por região
+- Top 5 subcategorias por lucratividade
+
+**Filtros interativos:** ano, região e categoria.
+
+O arquivo do Power BI está disponível em [powerbi/Retail-Sales-Profitability-Analysis.pbix](powerbi/Retail-Sales-Profitability-Analysis.pbix).
 
 ## Principais resultados
 
-- **Vendas totais:** R$ 2.296.919,49.
-- **Lucro total:** R$ 286.409,08.
-- **Margem geral:** 12,47%.
-- **Categoria com maior lucro:** Technology.
-- **Subcategoria com maior prejuízo:** Tables.
-- **Região com maior lucro:** West.
+- **Vendas totais:** US$ 2,296,919.49
+- **Lucro total:** US$ 286,409.08
+- **Margem geral:** 12.47%
+- **Categoria com maior lucro:** Technology
+- **Subcategoria com maior prejuízo:** Tables
+- **Região com maior lucro:** West
 
-A análise também identificou uma associação entre maiores faixas de desconto e menores margens de lucro.
+A análise também identificou uma associação entre maiores faixas de desconto e menores margens de lucro. Nas faixas de desconto acima de 20%, as margens observadas foram negativas.
 
-## Estrutura do projeto
+## Estrutura do repositório
 
 ```text
 Retail-Sales-Profitability-Analysis/
@@ -58,15 +82,16 @@ Retail-Sales-Profitability-Analysis/
 │   └── insights.md
 │
 ├── powerbi/
-│   └── dashboard.pbix
+│   └── Retail-Sales-Profitability-Analysis.pbix
 │
 └── README.md
 ```
 
-### Organização dos arquivos
+## Documentação complementar
 
-- **sql/**: scripts SQL utilizados no tratamento, validação e análise dos dados.
-- **docs/**: documentação dos principais insights identificados.
-- **powerbi/**: arquivo do dashboard desenvolvido no Power BI.
-- **README.md**: apresentação e documentação geral do projeto.
+- [Insights da análise](docs/insights.md)
+- [Arquivo do dashboard Power BI](powerbi/Retail-Sales-Profitability-Analysis.pbix)
 
+## Observação
+
+Os valores monetários apresentados neste projeto estão em **USD (dólar americano)**, conforme a moeda utilizada na base de dados original.
