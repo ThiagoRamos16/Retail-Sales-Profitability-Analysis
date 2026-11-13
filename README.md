@@ -39,6 +39,8 @@ O trabalho contempla o tratamento e a validação dos dados com SQL, a análise 
 
 ## Dashboard Power BI
 
+**[Acesse o dashboard interativo no Power BI](https://app.powerbi.com/view?r=eyJrIjoiZTA1MjFhMDctMjA4My00ZmE2LWFmYjQtNTNjMGUyM2RjZmUxIiwidCI6IjMxYjM3MmU2LWE2ZWYtNGNiYS04YjM4LTUxMjVhMTEyMjBhNiJ9)**
+
 O dashboard apresenta uma visão geral do desempenho comercial, com indicadores e gráficos interativos.
 
 ![Dashboard Superstore](images/dashboard_superstore.png)
@@ -57,7 +59,7 @@ O dashboard apresenta uma visão geral do desempenho comercial, com indicadores 
 
 **Filtros interativos:** ano, região e categoria.
 
-O arquivo do Power BI está disponível em [powerbi/Retail-Sales-Profitability-Analysis.pbix](powerbi/Retail-Sales-Profitability-Analysis.pbix).
+O arquivo do Power BI também está disponível para download: [powerbi/Retail-Sales-Profitability-Analysis.pbix](powerbi/Retail-Sales-Profitability-Analysis.pbix).
 
 ## Principais resultados
 
